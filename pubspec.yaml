@@ -39,6 +39,8 @@ dependencies:
   simple_animations: ^5.0.2
   flutter_screenutil: ^5.9.3
   get: ^4.6.6
+  email_validator: ^3.0.0
+  flutter_keyboard_visibility: ^6.0.0
 
 dev_dependencies:
   flutter_test:

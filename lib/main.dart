@@ -1,4 +1,5 @@
-import 'package:chatting_app/View/splash_screen.dart';
+import 'package:chatting_app/View/Constants/routeFactories.dart' as route;
+import 'package:chatting_app/View/SplashScreen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
     //       title: 'Flutter Demo', theme: ThemeData(), home: const SplashScreen());
     // }
     return MaterialApp(
+      onGenerateRoute: route.RouteFactories.generateRoute,
       theme: ThemeData(
         primarySwatch: Colors.green, // Set the app's primary theme color
       ),

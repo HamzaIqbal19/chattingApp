@@ -1,5 +1,6 @@
 import 'package:chatting_app/View/Constants/app_assets.dart';
 import 'package:chatting_app/View/Constants/app_dimensions.dart';
+import 'package:chatting_app/View/Constants/routeNames.dart';
 import 'package:chatting_app/View/Widgets/CustomButton.dart';
 
 import 'package:flutter/material.dart';
@@ -24,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
             height: AppDimensions.height10(context) * 10,
             width: AppDimensions.height10(context) * 8,
             child: const Image(
-              image: AssetImage(AppAssets.c_chatBox),
+              image: AssetImage(AppAssets.cChatBox),
             ),
           )),
       body: Container(
@@ -93,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: AppDimensions.height10(context) * 6,
                         width: AppDimensions.height10(context) * 6,
                         child: const Image(
-                          image: AssetImage(AppAssets.facebook),
+                          image: AssetImage(AppAssets.blackFacebook),
                         ),
                       ),
                       SizedBox(
@@ -158,7 +159,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: AppDimensions.height10(context) * 0.5,
                     ),
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushNamed(context, RouteNames.login);
+                      },
                       child: Text("Log in",
                           style: TextStyle(
                               color: Colors.white,
@@ -166,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               fontFamily: 'Caros')),
                     ),
                   ],
-                )
+                ),
               ],
             ),
           ),

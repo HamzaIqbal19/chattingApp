@@ -1,6 +1,6 @@
 import 'package:chatting_app/View/Constants/app_assets.dart';
 import 'package:chatting_app/View/Constants/app_dimensions.dart';
-import 'package:chatting_app/View/Home_screen.dart';
+import 'package:chatting_app/View/HomeScreen/Home_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
