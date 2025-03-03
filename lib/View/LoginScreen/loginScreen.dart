@@ -3,6 +3,7 @@ import 'package:chatting_app/View/Constants/app_dimensions.dart';
 import 'package:chatting_app/View/Widgets/CustomButton.dart';
 import 'package:chatting_app/View/Widgets/CustomTextFields.dart';
 import 'package:email_validator/email_validator.dart';
+import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 
 import 'package:flutter/material.dart';
 
@@ -42,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void performAction() {
-    // यहां अपना कोड लिखें जो कीबोर्ड हटने के बाद चलेगा
+    // य bहां अपना कोड लिखें जो कीबोर्ड हटने के बाद चलेगा
     focusNode.unfocus();
     print("Action performed after keyboard disappears.");
   }
@@ -70,12 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
         // extendBody: true,
         //   extendBodyBehindAppBar: true,
         appBar: AppBar(
-            //   backgroundColor: Color(0x44000000),
-            // elevation: 0,
-            // foregroundColor: Colors.transparent,
             surfaceTintColor: Colors.transparent,
-            // shadowColor: Colors.transparent,
-            //   backgroundColor: Colors.transparent,
             leadingWidth: AppDimensions.width10(context) * 6,
             leading: Padding(
               padding:

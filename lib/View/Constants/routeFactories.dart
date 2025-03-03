@@ -1,6 +1,7 @@
 import 'package:chatting_app/View/Constants/routeNames.dart';
 import 'package:chatting_app/View/HomeScreen/Home_screen.dart';
 import 'package:chatting_app/View/LoginScreen/loginScreen.dart';
+import 'package:chatting_app/View/SignUpScreen/signupScreen.dart';
 import 'package:chatting_app/View/SplashScreen/splash_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -44,10 +45,10 @@ class RouteFactories {
       case RouteNames.login:
         return CupertinoPageRoute(
             settings: routeSettings, builder: (context) => const LoginScreen());
-      // case RouteNames.register:
-      //   return CupertinoPageRoute(
-      //       settings: routeSettings,
-      //       builder: (context) => const SplashScreen());
+      case RouteNames.signUp:
+        return CupertinoPageRoute(
+            settings: routeSettings,
+            builder: (context) => const SignUpScreen());
       default:
         return errorRoute;
     }

@@ -3,5 +3,6 @@ class RouteNames {
   static const String login = '/loginScreen';
   static const String register = '/register';
   static const String home = '/home';
+  static const String signUp = '/signUp';
 //  static const String splash = '/splash';
 }

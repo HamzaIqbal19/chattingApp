@@ -139,8 +139,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 SizedBox(
                   height: AppDimensions.height10(context) * 1.7,
                 ),
-                CustomButton().appButton(context,
-                    onPressed: () {},
+                CustomButton().appButton(context, onPressed: () {
+                  Navigator.pushNamed(context, RouteNames.signUp);
+                },
                     buttonText: "Sign up with mail",
                     buttonBgColor: Colors.white,
                     textColor: Colors.black),
@@ -152,7 +153,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Text("Existing account?",
                         style: TextStyle(
-                            color: Color(0XFFB9C1BE),
+                            color: const Color(0XFFB9C1BE),
                             fontSize: AppDimensions.font10(context) * 1.5,
                             fontFamily: 'Caros')),
                     SizedBox(
