@@ -1,5 +1,5 @@
 import 'package:chatting_app/View/Constants/routeFactories.dart' as route;
-import 'package:chatting_app/View/SplashScreen/splash_screen.dart';
+import 'package:chatting_app/View/Splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

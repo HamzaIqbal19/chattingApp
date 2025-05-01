@@ -2,17 +2,19 @@ import 'package:chatting_app/View/Constants/app_assets.dart';
 import 'package:chatting_app/View/Constants/app_dimensions.dart';
 import 'package:chatting_app/View/Constants/routeNames.dart';
 import 'package:chatting_app/View/Widgets/CustomButton.dart';
+import 'package:chatting_app/View/Widgets/bottomNavigation.dart';
+import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class OnBoarding extends StatefulWidget {
+  const OnBoarding({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<OnBoarding> createState() => _OnBoardingState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _OnBoardingState extends State<OnBoarding> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -140,7 +142,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: AppDimensions.height10(context) * 1.7,
                 ),
                 CustomButton().appButton(context, onPressed: () {
-                  Navigator.pushNamed(context, RouteNames.signUp);
+                  //  Navigator.pushNamed(context, RouteNames.signUp);
+                  Navigator.push(
+                      context,
+                      CupertinoPageRoute(
+                          builder: (context) => BottomNavigation()));
+                  // Navigator.pushNamed(context, RouteNames.home);
                 },
                     buttonText: "Sign up with mail",
                     buttonBgColor: Colors.white,

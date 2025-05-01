@@ -1,6 +1,6 @@
 import 'package:chatting_app/View/Constants/app_assets.dart';
 import 'package:chatting_app/View/Constants/app_dimensions.dart';
-import 'package:chatting_app/View/HomeScreen/Home_screen.dart';
+import 'package:chatting_app/View/onBoarding/onBoarding.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen>
     super.initState();
     Future.delayed(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+          context, MaterialPageRoute(builder: (context) => const OnBoarding()));
     });
   }
 

@@ -1,4 +1,5 @@
 import 'package:chatting_app/View/Constants/app_dimensions.dart';
+import 'package:chatting_app/View/Constants/routeNames.dart';
 import 'package:chatting_app/View/Widgets/CustomButton.dart';
 import 'package:chatting_app/View/Widgets/CustomTextFields.dart';
 import 'package:email_validator/email_validator.dart';
@@ -370,7 +371,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   CustomButton().appButton(context,
                       onPressed: enable == true
                           ? () {
-                              if (_formKey.currentState!.validate()) {}
+                              if (_formKey.currentState!.validate()) {
+                                Navigator.pushNamed(context, RouteNames.home);
+                              }
                             }
                           : null,
                       buttonText: "Create an account",

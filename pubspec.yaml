@@ -41,6 +41,7 @@ dependencies:
   get: ^4.6.6
   email_validator: ^3.0.0
   flutter_keyboard_visibility: ^6.0.0
+  font_awesome_flutter: ^10.8.0
 
 dev_dependencies:
   flutter_test:
